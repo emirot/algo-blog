@@ -125,9 +125,9 @@ params:
     homeInfoParams:
         Title: "Blog"
         Content: >
-            Welcome to my personal blog  
+            Welcome to my algo blog  
 
-            - This blog will be about every technology related topic that will cross my mind
+            - This blog will hold coding challenges I came across.
     socialIcons:
         - name: stackoverflow
           url: "https://stackoverflow.com/users/2201037/nono"
