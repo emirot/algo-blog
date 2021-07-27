@@ -10,7 +10,7 @@ ShowToc: false
 TocOpen: false
 ---
 
-## New Blog
+## Algo
 
 I realized, most of the time, I'm not able to find back my answers from previous coding challenges.  
 I can remember a similiar problem or want to have a quick reminder about something and I can't find it...  
