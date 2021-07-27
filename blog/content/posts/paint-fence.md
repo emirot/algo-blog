@@ -12,4 +12,4 @@ TocOpen: false
 
 ## Challenge
 
-![Paint Fence](https://blog.nolanemirot.com/paint-fence.jpg)
+![Paint Fence](https://algo.nolanemirot.com/paint-fence.jpg)
