@@ -3,7 +3,7 @@ author: "Nolan"
 title: "Paint Fence"
 date: "2021-07-25"
 categories: ["algorithm", "python"]
-draft: true
+draft: false
 description: "Paint Fence"
 tags: ["algo", "blog"]
 ShowToc: false
