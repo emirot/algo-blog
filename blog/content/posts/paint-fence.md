@@ -1,10 +1,10 @@
 ---
 author: "Nolan"
 title: "Paint Fence"
-date: "2021-07-25"
+date: "2021-07-27"
 categories: ["algorithm", "python"]
 draft: false
-description: "Paint Fence"
+description: ""
 tags: ["algo", "blog"]
 ShowToc: false
 TocOpen: false
