@@ -17,12 +17,12 @@ TocOpen: false
  ---
 
 
-You are painting post on a fence of size N.
-Only K consecutive post can have the same color
-Return the number of way you can paint the fence
+You are painting post on a fence of size N.  
+Only K consecutive post can have the same color.  
+Return the number of way you can paint the fence.  
 
 E.g:
-```
+```bash
 N = 3
 K = 2
 -> will return 6
