@@ -46,3 +46,19 @@ class Solution:
         self.helper(n, k, "")
         return self.count
 ```
+
+The code above will create a recursion tree like so:
+
+
+```
+            /         \
+           /           \
+          R             G
+        /  \           /  \
+       R     G         R     G
+      / \   / \       / \    / \
+    R    G  R  G     R   G  R   G
+------------------------------------
+```      1  2  3     4   5  6
+
+Time complexity: k^n
