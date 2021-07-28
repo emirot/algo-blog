@@ -10,10 +10,10 @@ ShowToc: false
 TocOpen: false
 ---
 
+![Paint Fence](https://algo.nolanemirot.com/paint-fence.jpg)
+
 ## Challenge
 
-![Paint Fence](https://algo.nolanemirot.com/paint-fence.jpg)
- 
  ---
 
 
