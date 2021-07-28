@@ -10,6 +10,7 @@ ShowToc: false
 TocOpen: false
 ---
 
+![Linked List](https://algo.nolanemirot.com/linked-list.jpg)
 ## Challenge
 
 Given the head of a singly linked list and two integers, reverse the nodes of the list from position left to position right.
