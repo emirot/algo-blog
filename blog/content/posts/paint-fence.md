@@ -28,7 +28,7 @@ K = 2
 -> will return 6
 ```
 
-## Solution 1 Time Limted Exceeded
+## Solution 1 - Time Limted Exceeded
 
 ```python
 class Solution:
