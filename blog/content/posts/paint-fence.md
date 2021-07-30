@@ -63,3 +63,30 @@ The code above will create a recursion tree like so:
 ```
 
 Time complexity: k^n
+
+## Solution 2 - Memoization
+
+```python
+class Solution:
+    
+    
+    def helper(self,n, k, parent, previous_same) ->int:
+        if (n, previous_same) in self.memo:
+            return self.memo[(n, previous_same)]
+        if n == 0:
+            return 1
+
+        ways = 0
+        for current in range(k):
+            if parent == current and previous_same:
+                continue
+            ways += self.helper(n-1, k, current, current == parent)
+        self.memo[(n,previous_same)] = ways
+        return ways
+    
+    def numWays(self, n: int, k: int) -> int:
+        self.count = 0
+        self.memo = {}
+        res = self.helper(n, k, None, None)
+        return res
+```
