@@ -5,7 +5,7 @@ title: "Jump Game"
 date: "2021-08-01"
 categories: ["algorithm", "python"]
 draft: false
-description: "Another leetcode"
+description: "Another challenge"
 tags: ["algo", "bfs"]
 ShowToc: false
 TocOpen: false
