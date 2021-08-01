@@ -6,7 +6,7 @@ date: "2021-08-01"
 categories: ["algorithm", "python"]
 draft: false
 description: "Another challenge"
-tags: ["algo", "bfs"]
+tags: ["algo", "recursion"]
 ShowToc: false
 TocOpen: false
 ---
