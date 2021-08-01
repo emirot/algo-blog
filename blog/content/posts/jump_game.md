@@ -31,6 +31,7 @@ Output: 2 # reach to index 1 and then from there last index.
 class Solution:    
     
     def helper(self, nums, current_index, steps, l, previous):
+        # ending recursion early if already above
         if len(previous) >= self.m:
             return
         if current_index >=l-1:
