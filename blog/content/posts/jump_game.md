@@ -25,7 +25,7 @@ Output: 2 # reach to index 1 and then from there last index.
 
 ---
 
-## Solution - Recursion | TLE
+## Solution - Recursion (TLE)
 
 ```python
 class Solution:    
@@ -51,4 +51,29 @@ class Solution:
         return self.m
 ```
 
-## 
+##  Solution 2 - Memoization
+
+```python
+class Solution:
+    
+    def helper(self, nums, current_index):
+
+        if current_index >= len(nums)-1:
+            return 0
+        
+        if current_index in self.memo:
+            return self.memo[current_index]
+
+        steps = nums[current_index]
+        for i in range(1, steps+1):
+            self.m = min(self.m, 1 + self.helper(nums, current_index + i))
+        self.memo[current_index] = self.m
+        return self.m
+    
+    def jump(self, nums: List[int]) -> int:
+        if not nums:
+            return 0
+        self.m = float('inf')
+        self.memo = {}
+        return self.helper(nums, 0)
+```
