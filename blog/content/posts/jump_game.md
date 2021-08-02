@@ -70,7 +70,7 @@ class Solution:
         self.memo[current_index] = self.m
         return self.m
     
-    def jump(self, nums: List[int]) -> int:
+    def min_jump(self, nums: List[int]):
         if not nums:
             return 0
         self.m = float('inf')
