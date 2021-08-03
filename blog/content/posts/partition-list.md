@@ -12,7 +12,7 @@ TocOpen: false
 
 ## Challenge
 
-![Partition List](https://algo.nolanemirot.com/partition-list.jpg)
+![Partition List](https://algo.nolanemirot.com/partition-list.jpeg)
 
 ---
 
