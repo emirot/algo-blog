@@ -62,5 +62,5 @@ class Solution:
         return self.left_part
 ```
 
-Time complexity: O(n)
+Time complexity: O(n)  
 Space complexity: O(1)
