@@ -1,7 +1,7 @@
 ---
 author: "Nolan"
 title: "Partition List"
-date: "2021-08-01"
+date: "2021-08-02"
 categories: ["algorithm", "python"]
 draft: false
 description: "Another challenge"
