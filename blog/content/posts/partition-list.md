@@ -12,8 +12,6 @@ TocOpen: false
 
 ## Challenge
 
-![Partition List](https://algo.nolanemirot.com/partition-list.jpeg)
-
 ---
 
 
