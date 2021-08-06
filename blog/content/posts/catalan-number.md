@@ -1,7 +1,7 @@
 ---
 author: "Nolan"
 title: "Catalan Number"
-date: "2021-08-03"
+date: "2021-08-05"
 categories: ["algorithm", "python"]
 description: "Another challenge"
 tags: ["algo", "recursion"]
