@@ -15,7 +15,8 @@ TocOpen: false
 ## Challenge
 
 Your task is to print the [Nth catalan number](https://en.wikipedia.org/wiki/Catalan_number).
-```
+
+```python
 catalan(5) = 42
 ```
 
