@@ -49,3 +49,5 @@ def catalan(n):
         s += catalan(i) * catalan(n-1-i)
     return  s
 ```
+
+Time Complexity: O(n!)  
