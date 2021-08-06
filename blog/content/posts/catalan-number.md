@@ -37,7 +37,7 @@ def catalan(n):
             c[j] += c[i] * c[j-1-i]
     return c[n]
 ```
-Time Complexity: O(n^2)
+Time Complexity: O(n^2)  
 
 ### Top Down
 
