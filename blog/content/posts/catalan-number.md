@@ -4,7 +4,7 @@ title: "Catalan Number"
 date: "2021-08-05"
 categories: ["algorithm", "python"]
 description: "Another challenge"
-tags: ["algo", "recursion"]
+tags: ["algo", "dynamic programming"]
 ShowToc: false
 TocOpen: false
 
