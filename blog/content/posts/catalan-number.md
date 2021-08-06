@@ -3,7 +3,6 @@ author: "Nolan"
 title: "Catalan Number"
 date: "2021-08-03"
 categories: ["algorithm", "python"]
-draft: true
 description: "Another challenge"
 tags: ["algo", "recursion"]
 ShowToc: false
