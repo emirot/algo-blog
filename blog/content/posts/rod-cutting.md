@@ -38,7 +38,7 @@ class Solution:
         for i, e in enumerate(cuts):
             cost[i+1] = e
         self.cost = cost
-        print("res",self.helper(n, 0))
-        print(self.memo)
+        return self.helper(n, 0)
+
 
 ```
