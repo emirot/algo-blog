@@ -39,6 +39,4 @@ class Solution:
             cost[i+1] = e
         self.cost = cost
         return self.helper(n, 0)
-
-
 ```
