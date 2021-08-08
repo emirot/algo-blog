@@ -11,10 +11,13 @@ TocOpen: false
 
 ## Challenge
 
+Given a rod of length N. You are also given an array that represents the revenue of each cut size.
+You want to maximize revenue.
+E.g : [2,3,7,8], piece of length 1 gets you 2$.
 
 ## Solution
 
-
+Top down with Memoization:
 ```python
 class Solution:
 
