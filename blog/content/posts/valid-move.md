@@ -37,8 +37,6 @@ color="B"
 
 ```python
 class Solution:
-    
-    
     def get_opposite(self, color):
         if color == "B":
             return "W"
