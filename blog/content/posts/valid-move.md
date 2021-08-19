@@ -60,7 +60,6 @@ class Solution:
                 continue
             length = 0
             while r < len(board) and r >= 0 and c < len(board[0]) and c >= 0:
-                print(r,c, board[r][c])
                 if board[r][c] == self.get_opposite(current_color):
                     length += 1
                 elif  board[r][c]=='.':
