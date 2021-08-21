@@ -9,7 +9,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 enableEmoji: true
-googleAnalytics:
+googleAnalytics: G-JP80VBXTT9
 
 minify:
     disableXML: true
