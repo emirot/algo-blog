@@ -4,7 +4,7 @@ title: "Valid Move"
 date: "2021-08-18"
 categories: ["algorithm", "python"]
 description: "Another challenge"
-tags: ["algo", "Implemtation"]
+tags: ["algo", "Implementation"]
 ShowToc: false
 TocOpen: false
 ---
@@ -43,7 +43,7 @@ class Solution:
         elif color == "W":
             return "B"
         return "E"
-    
+
     def checkMove(self, board: List[List[str]], rMove: int, cMove: int, color: str) -> bool:
         
         directions = [(0, -1), (-1,-1) ,(-1,0) ,(-1,1), (0,1), (1,1), (1,0), (1,-1)] 
