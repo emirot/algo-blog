@@ -46,7 +46,6 @@ class Solution:
     def helper(self, s, current_cost, cost, index):
 
         if self.no_consequtive_letters(s):
-            # print(s,"current_cost", current_cost)
             self.min_cost = min(current_cost, self.min_cost)
             return 0
         if index > self.s_len:
@@ -67,3 +66,34 @@ class Solution:
 
 ## Solution 2 - Greedy
 
+```python
+class Solution:
+    
+    
+    def remove_n_max(self, n, cost):
+        c = sorted(cost)
+        res = []
+        for i in range(0, n-1):
+            res.append(c[i])
+        return sum(res)
+    
+    def minCost(self, s: str, cost: List[int]) -> int:
+        total = 0
+        i = 0
+        while i < len(s):
+            arr = []
+            current = 0
+            in_loop = False
+            tmp = []
+            while i < len(s)-1 and s[i] == s[i+1]:
+                arr.append(cost[i])
+                in_loop = True
+                current +=1
+                tmp.append(s[i])
+                i += 1
+            if in_loop is True:
+                arr.append(cost[i])                
+                total += self.remove_n_max(current+1, arr)
+            i += 1
+        return total
+```
