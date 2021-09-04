@@ -25,18 +25,16 @@ catalan(5) = 42
 
 ```python
 def catalan(n):
-    if n == 0:
-        return 1
-    c = []
-    for i in range(n+1):
-        c.append(0)
-    c[0] = 1
-    res = 0
-    for j in range(0, n+1):
-        for i in range(0, j):
-            c[j] += c[i] * c[j-1-i]
-    return c[n]
+    res = [0 for i in range(n+1)]
+    res[0] = 1
+    s = 0
+    for i in range(1, n+1):
+        for j in range(0, i):
+            res[i] += res[j] * res[i-j-1]
+
+    return res[n]
 ```
+
 Time Complexity: O(n^2)  
 
 ### Top Down
@@ -52,3 +50,7 @@ def catalan(n):
 ```
 
 Time Complexity: O(n!)  
+
+## Application
+
+- Find the number of unique BST.
