@@ -1,6 +1,6 @@
 ---
 author: "Nolan"
-title: "Catalan Number"
+title: "House Robber"
 date: "2021-08-23"
 categories: ["algorithm", "python"]
 description: "Another challenge"
