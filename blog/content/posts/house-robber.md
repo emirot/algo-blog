@@ -17,7 +17,7 @@ What is stopping you to rob everything is that you cannot rob two consecutive ho
 Determine the maxium amout of money you can rob without triggering the alarm.
 
 
-## Solution 2 - Recursion
+## Solution 1 - Recursion
 
 ```python
 class Solution:
@@ -40,6 +40,9 @@ class Solution:
         
         
 ```
+Time Complexity: O(n^2)  
+
+
 
 ## Solution 2 - Dynamic Programming
 
