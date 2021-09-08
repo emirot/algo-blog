@@ -37,12 +37,9 @@ class Solution:
         self.m = float("-inf")
         self.helper(0, nums, 0)
         return self.m
-        
-        
 ```
-Time Complexity: O(n^2)  
 
-
+Time Complexity: O(2^n)  
 
 ## Solution 2 - Dynamic Programming
 
