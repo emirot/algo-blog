@@ -20,10 +20,9 @@ Examples:
 "kubernetes" "k8s" => True
 "apple" "a2e" => False
 ```
-
 ## Solution
 
-This is the kind of implementation easy to get wrong and/or forgot edge cases...
+This is the kind of implementation challenges easy to get wrong and/or forgot edge cases...
 
 ```python
 class Solution:
