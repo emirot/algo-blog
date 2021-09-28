@@ -31,33 +31,28 @@ LCA()
 ## Solution 1 - Recursion
 
 ```python
-
-# Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-
 class Solution:
     
-    def helper(self, root, p, q):
-        if root is None:
+    def helper(self, root, nodes):
+        
+        if not root:
             return None
-        if root == p or root == q:
-            return True
-        left = self.helper(root.left,p, q)
-        right = self.helper(root.right,p, q)
-        if left is True and right is True:
+        
+        if root in nodes:
             return root
-        if left is None and right is True:
-            return True
-        if right is None and left is True:
-            return True
-        return None
+        left = self.helper(root.left, nodes)
+        right = self.helper(root.right,nodes)
+        if left and right:
+            return root
+        if left and right is None:
+            return left
+        if right and left is None:
+            return right
+        
+        
     
-    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
-        return self.helper(root, p, q)
+    def lowestCommonAncestor(self, root: 'TreeNode', nodes: 'List[TreeNode]') -> 'TreeNode':
+        return self.helper(root, nodes)
 ```
 
 ## Solution 2 - Iterative
