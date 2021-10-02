@@ -1,0 +1,49 @@
+
+---
+author: "Nolan"
+title: "Longest Increasing Subsequence"
+date: "2021-10-01"
+categories: ["algorithm", "python"]
+draft: false
+description: "Another challenge"
+tags: ["algo", "dynamic programming"]
+ShowToc: false
+TocOpen: false
+---
+
+## Challenge
+
+You are given an integer array called nums, your task is to return the longest increasing subsequence.
+
+E.g
+`[0,1,2,7]` is the longest subsequence of the array `[0,3,1,6,2,2,7]`
+
+
+## Solution 1 - Recursion
+
+
+```py
+class Solution:
+
+    def first_solution(self, nums, index, prev, ct):
+
+        if index > len(nums):
+            self.m = max(self.m, ct)
+            return
+        self.first_solution(nums, index + 1, prev, ct)
+        if index < len(nums) and nums[index] > prev:
+            self.first_solution(nums, index + 1, nums[index], ct + 1)
+        return ct
+
+    def lengthOfLIS(self, nums: List[int]) -> int:
+        self.m = 0
+        self.first_solution(tuple(nums), 0, float("-inf"), 0)
+        return self.m
+```
+
+Time complexity: O(n^2)  
+
+
+## Solution 2 - Top Down Recursion + Memoization
+
+
