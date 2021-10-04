@@ -42,7 +42,23 @@ class Solution:
 Time complexity: O(n^2)  
 
 
-## Solution 2 - Using Patience sort
+## Solution 2 - Dynamic Programming
+
+```python
+class Solution:
+    def lengthOfLIS(self, nums: List[int]) -> int:
+        res = []
+        dp = [1 for i in range(len(nums))]
+        for i in range(len(nums)):
+            for j in range(i,-1,-1):
+                if nums[i] > nums[j]:
+                    dp[i] = max(dp[i], dp[j]+1)
+        return max(dp)
+```
+
+Time Complexity: O(n^2)
+
+## Solution 3 - Using Patience sort
 
 ```python
 def lis_using_patience_sort(arr):
