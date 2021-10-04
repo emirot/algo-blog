@@ -17,8 +17,6 @@ You are given an integer array called nums, your task is to return the longest i
 
 E.g
 `[0,1,2,7]` is the longest subsequence of the array `[0,3,1,6,2,2,7]`
-
-
 ## Solution 1 - Recursion
 
 
@@ -44,6 +42,25 @@ class Solution:
 Time complexity: O(n^2)  
 
 
-## Solution 2 - Top Down Recursion + Memoization
+## Solution 2 - Using Patience sort
 
+```python
+def lis_using_patience_sort(arr):
+    stack = [[]]
+    for n in arr:
+        i = 0
+        while i < len(arr)-1:
+            if i < len(stack) and len(stack[i]) == 0:
+                stack[i].insert(0, n)
+                break
+            elif i < len(stack)  and len(stack[i]) > 0 and n <= stack[i][0]:
+                stack[i].insert(0, n)
+                break
+            elif i == len(stack)-1 and len(stack[i]) > 0 and n >= stack[i][0]:
+                stack.append([n])
+                break
+            i += 1
+    return len(stack)
+```
 
+Time Complexity: O(n log n)  
