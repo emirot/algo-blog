@@ -63,4 +63,21 @@ def lis_using_patience_sort(arr):
     return len(stack)
 ```
 
+Simplified implementation using bisect  
+
+```python
+class Solution:
+    def lengthOfLIS(self, nums: List[int]) -> int:
+        res = []
+
+        for num in nums:
+            if not res or num > res[-1]:
+                res.append(num)
+            else:
+                idx = bisect.bisect_left(res,num)
+                res[idx] = num
+        return len(res)
+```
+
+
 Time Complexity: O(n log n)  
