@@ -12,7 +12,7 @@ TocOpen: false
 
 ## Challenge
 
-Given two params a word and it's abbreviation return True if the abreviation is valid.
+Given two params a word and it's abbreviation return True if the abbreviation is valid.
 
 Examples:
 

@@ -32,7 +32,7 @@ Example 2:
 
 ```python
 class Solution:
-    def no_consequtive_letters(self, s):
+    def no_consecutive_letters(self, s):
 
         t = ""
         for e in s:
@@ -45,7 +45,7 @@ class Solution:
 
     def helper(self, s, current_cost, cost, index):
 
-        if self.no_consequtive_letters(s):
+        if self.no_consecutive_letters(s):
             self.min_cost = min(current_cost, self.min_cost)
             return 0
         if index > self.s_len:

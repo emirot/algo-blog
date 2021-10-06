@@ -13,7 +13,7 @@ TocOpen: false
 
 You are given a board 8 x 8, a position(x,y) as well of a color.  
 You task is to determine if this move is valid.  
-A move is considered valid, if you have can have (vertically, horizontally or in digonal), starting from this position, a structure like so: `color given then oposite N colors then color given`.  
+A move is considered valid, if you have can have (vertically, horizontally or in digonal), starting from this position, a structure like so: `color given then opposite N colors then color given`.  
 For example ["B","W","W","B"] or ["W","B","W"] is valid in any direction.
 This ["B","B","W"] or ["W","."] is invalid.
 
