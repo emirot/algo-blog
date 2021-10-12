@@ -18,7 +18,7 @@ Will return 2
 
 ## Data Structure
 
-Creating a Disjoin Set data structure using a dictionnary.  
+Creating a Disjoin Set data structure using a dictionary.  
 
 ```python
 class DisjointSet:
