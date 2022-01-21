@@ -56,7 +56,7 @@ class Solution:
 
 
         ct = 0
-        for k,v in ds.ds.items():
+        for k,v in ds.rank.items():
             if k == v:
                 ct += 1
         return ct
