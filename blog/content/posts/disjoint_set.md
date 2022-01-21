@@ -24,20 +24,20 @@ Creating a Disjoin Set data structure using a dictionary.
 class DisjointSet:
 
     def __init__(self, n):
-        self.ds = {i:i for i in range(n)}
+        self.rank = {i:i for i in range(n)}
 
     def __repr__(self):
-        return f"Repr:{self.ds}"
+        return f"Repr:{self.rank}"
 
     def find(self, val):
-        while self.ds[val] != val:
-            val = self.ds[val]
+        while self.rank[val] != val:
+            val = self.rank[val]
         return val
     
     def union(self,val1, val2):
         v1 = self.find(val1)
         v2 = self.find(val2)
-        self.ds[v2] = v1
+        self.rank[v2] = v1
 ```
 
 ## Solution
