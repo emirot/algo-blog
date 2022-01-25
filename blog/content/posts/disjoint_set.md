@@ -30,8 +30,12 @@ class DisjointSet:
         return f"Repr:{self.rank}"
 
     def find(self, val):
+        # adding collapsing find
+        original_v = val
         while self.rank[val] != val:
             val = self.rank[val]
+        if original_v != val:
+            self.rank[original_v] = val
         return val
     
     def union(self,val1, val2):
