@@ -29,7 +29,7 @@ OUTPUT = [[1,2],[5,5],[25,25]]
 ```python
 class Solution:
     
-    def intervalIntersection(self, firstList: List[List[int]], secondList: List[List[int]]) -> List[List[int]]:
+    def interval_intersection(self, firstList: List[List[int]], secondList: List[List[int]]) -> List[List[int]]:
         if not firstList or not secondList:
             return []
         max_val = max(firstList[-1][1],secondList[-1][1])
