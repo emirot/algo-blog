@@ -24,7 +24,7 @@ OUTPUT = [[1,2],[5,5],[25,25]]
 
 
 
-## Solution - Memory Limit Exceeded
+## Solution #1 - Memory Limit Exceeded
 
 ```python
 class Solution:
