@@ -55,9 +55,9 @@ class Solution:
             i += 1
         i = 0 
         while i < max_val + 1:
-            if first[i-1] == 0 and first[i ] == 1 and second[i-1] == 1 and second[i] == 0:
+            if first[i-1] == 0 and first[i] == 1 and second[i-1] == 1 and second[i] == 0:
                 output.append([i,i])
-            if second[i-1] == 0 and second[i ] == 1 and first[i-1] == 1 and first[i] == 0:
+            if second[i-1] == 0 and second[i] == 1 and first[i-1] == 1 and first[i] == 0:
                 output.append([i,i])
             i += 1
         return sorted(output)
