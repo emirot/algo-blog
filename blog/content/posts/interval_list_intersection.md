@@ -64,3 +64,41 @@ class Solution:
 ```
 
 Memory inefficient because the biggest value of the two lists is used to crate `first` and `second`.
+
+## Solution #2 
+
+
+```python
+class Solution:
+
+    def intervalIntersection(self, firstList: List[List[int]], secondList: List[List[int]]) -> List[List[int]]:
+        if firstList is None or secondList is None:
+            return []
+        l_first = len(firstList)
+        l_second = len(secondList)
+        i = 0
+        j = 0
+        res = []
+        while i < l_first and j < l_second:
+            min_first, max_first = firstList[i][0], firstList[i][1]
+            min_second, max_second = secondList[j][0], secondList[j][1]
+            if min_first < min_second  < max_first:
+                res.append([min_second, min(max_first, max_second)])
+            if min_second < min_first < max_second:
+                res.append([min_first, min(max_first, max_second)])
+            if max_first == min_second:
+                res.append([max_first, min_second])
+            if min_first == max_second:
+                res.append([max_second, max_second])
+            if min_first == min_second:
+                res.append([min_first, min(max_first, max_second)])
+            elif min_first == min_second:
+                res.append([min_first, min(max_first, max_second)])
+            if max_first < max_second:
+                i += 1
+            else:
+                j += 1
+        return res
+```
+
+Passes all test cases.
