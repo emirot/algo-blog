@@ -102,3 +102,30 @@ class Solution:
 ```
 
 Passes all test cases.
+
+
+## Solution 3 - Cleaner
+
+```python
+class Solution:
+    
+    def intervalIntersection(self, firstList: List[List[int]], secondList: List[List[int]]) -> List[List[int]]:
+        if firstList is None or secondList is None:
+            return []
+        l_first = len(firstList)
+        l_second = len(secondList)
+        i = 0
+        j = 0
+        res = []
+        while i < l_first and j < l_second:
+            low = max(firstList[i][0], secondList[j][0])
+            hi = min(firstList[i][1], secondList[j][1] )
+            if low <= hi:
+                res.append([low, hi])
+            if firstList[i][1] < secondList[j][1]:
+                i += 1
+            else:
+                j += 1
+        return res
+        
+```
