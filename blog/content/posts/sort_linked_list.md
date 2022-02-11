@@ -5,7 +5,7 @@ date: "2021-09-01"
 categories: ["algorithm", "linked-list"]
 draft: false
 description: "Another programing challenge"
-tags: ["pyhon", "algorithm"]
+tags: ["python", "algorithm"]
 ShowToc: false
 TocOpen: false
 ---
