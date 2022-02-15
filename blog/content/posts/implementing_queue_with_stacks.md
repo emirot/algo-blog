@@ -1,8 +1,7 @@
-
 ---
 author: "Nolan"
 title: "Implementing queue with stacks"
-date: "2020-08-01"
+date: "2021-03-04"
 categories: ["algorithm", "python"]
 draft: false
 description: "Another challenge"
