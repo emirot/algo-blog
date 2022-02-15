@@ -1,4 +1,3 @@
-
 ---
 author: "Nolan"
 title: "Longest Increasing Subsequence"
