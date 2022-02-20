@@ -50,8 +50,8 @@ class Solution:
 
     def intToRoman(self, num: int) -> str:
         thousand = self.find_representation((num % 10000) // 1000, "M","","")
-        hundread =  self.find_representation((num % 1000) // 100, "C","D","M")
+        hundred =  self.find_representation((num % 1000) // 100, "C","D","M")
         ten = self.find_representation((num % 100) // 10 , "X", "L", "C")
         ones = self.find_representation(num % 10, "I", "V", "X")
-        return thousand + hundread + ten + ones
+        return thousand + hundred + ten + ones
 ```
