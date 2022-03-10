@@ -1,7 +1,7 @@
 ---
 author: "Nolan"
 title: "Repeated DNA sequence"
-date: "2022-02-15"
+date: "2022-03-07"
 categories: ["algorithm", "string"]
 draft: false
 description: "Another challenge"
