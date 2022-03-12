@@ -58,3 +58,25 @@ class Solution:
         return head
 
 ```
+
+## Solution 2 - Using dummy node
+
+```python
+    def deleteDuplicatesUnsorted(self, head: ListNode) -> ListNode:
+        tmp = head
+        oc = defaultdict(int)
+        while tmp:
+            oc[tmp.val] += 1
+            tmp = tmp.next
+        fake = ListNode()
+        fake.next = head
+        prev = fake
+        tmp = head
+        while tmp:
+            if oc[tmp.val] > 1:
+                prev.next = tmp.next
+            else:
+                prev = tmp
+            tmp = tmp.next
+        return fake.next
+```
