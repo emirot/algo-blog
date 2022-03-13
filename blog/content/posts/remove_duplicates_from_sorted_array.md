@@ -21,7 +21,7 @@ Constraints:
 - Do not allocate extra space for another array. Modify the input array in-place with O(1) extra memory.   
 
 
-Don't change the lenght of the array return the index of the last element after your operations.  
+Don't change the length of the array return the index of the last element after your operations.  
 
 
 ## Solution 1 
