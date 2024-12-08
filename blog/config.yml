@@ -1,7 +1,7 @@
 baseURL: "/"
 title: Algo blog
 paginate: 10
-theme: github.com/adityatelange/hugo-PaperMod
+theme: PaperMod
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
