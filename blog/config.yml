@@ -1,6 +1,5 @@
 baseURL: ""
 title: Algo blog
-paginate: 10
 theme: PaperMod
 
 enableInlineShortcodes: true
